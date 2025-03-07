@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmartWeather</string>
+    <string name="titulo2">SmartWeather</string>
+    <string name="usario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="iniciarSesion">Iniciar sesión</string>
+    <string name="olvidasteContraseña">¿Olvidaste tu contraseña?</string>
+    <string name="registrarse">Registrarse</string>
+</resources>
