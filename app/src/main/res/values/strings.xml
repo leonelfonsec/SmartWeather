@@ -6,4 +6,15 @@
     <string name="iniciarSesion">Iniciar sesión</string>
     <string name="olvidasteContraseña">¿Olvidaste tu contraseña?</string>
     <string name="registrarse">Registrarse</string>
+    <string name="bienvenido">¡Bienvenido a SmartWeather!</string>
+    <string name="alarmas">Mis alarmas</string>
+    <string name="alarmaUno">Alarma uno</string>
+    <string name="alarmaUnoHora">05:00 AM</string>
+    <string name="alarmaUnotemp">≥ 5 °C</string>
+    <string name="alarmaDos">Alarma Bicicleta</string>
+    <string name="alarmaDosHora">06:15 AM</string>
+    <string name="alarmaDostemp">≥ 5 °C</string>
+    <string name="alarmaTres">Alarma Trabajo</string>
+    <string name="alarmaTresHora">07:00 AM</string>
+    <string name="alarmaTrestemp">≥ 10 °C</string>
 </resources>

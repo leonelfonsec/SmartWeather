@@ -6,4 +6,11 @@
     </style>
 
     <style name="Theme.SmartWeather" parent="Base.Theme.SmartWeather" />
+
+    <style name="CustomMaterialSwitch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="trackTint">@color/Color4</item>
+        <item name="thumbTint">@color/Color3</item>
+        <item android:drawable="@drawable/switch_thumb_off"></item>
+    </style>
+
 </resources>

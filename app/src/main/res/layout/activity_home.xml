@@ -5,6 +5,261 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Color3_oscuro"
     tools:context=".home">
+
+    <TextView
+        android:id="@+id/bienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/bienvenido"
+        android:textAlignment="center"
+        android:textColor="@color/Color5_claro"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/alarmas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/alarmas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/alarmas"
+        android:textColor="@color/Color5_claro"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienvenido" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarmas">
+
+        <TextView
+            android:id="@+id/itemalarma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="@string/alarmaUno"
+            android:textColor="@color/Color3_claro"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:flow_horizontalAlign="start" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/alarmaUnoHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/rounded_edittexthora"
+                android:fontFamily="sans-serif-medium"
+                android:inputType="textEmailAddress"
+                android:minHeight="56dp"
+                android:minWidth="145dp"
+                android:text="@string/alarmaUnoHora"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/alarmaUnoTemp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_min="100dp" />
+
+            <EditText
+                android:id="@+id/alarmaUnoTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+
+                android:background="@drawable/rounded_edittexttemp"
+                android:fontFamily="sans-serif-medium"
+                android:inputType="textEmailAddress"
+                android:minHeight="56dp"
+                android:text="@string/alarmaUnotemp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:minWidth="100dp"
+                app:layout_constraintStart_toEndOf="@+id/alarmaUnoHora"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/my_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:useMaterialThemeColors="true" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/itemalarmados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="@string/alarmaDos"
+            android:textColor="@color/Color3_claro"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:flow_horizontalAlign="start" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/alarmaDosHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/rounded_edittexthora"
+                android:fontFamily="sans-serif-medium"
+                android:inputType="textEmailAddress"
+                android:minHeight="56dp"
+                android:minWidth="145dp"
+                android:text="@string/alarmaDosHora"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/alarmaDosTemp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_min="100dp" />
+
+            <EditText
+                android:id="@+id/alarmaDosTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+
+                android:background="@drawable/rounded_edittexttemp"
+                android:fontFamily="sans-serif-medium"
+                android:inputType="textEmailAddress"
+                android:minHeight="56dp"
+                android:text="@string/alarmaUnotemp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:minWidth="100dp"
+                app:layout_constraintStart_toEndOf="@+id/alarmaDosHora"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/my_switchDos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:useMaterialThemeColors="true" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/itemalarmaTres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="@string/alarmaTres"
+            android:textColor="@color/Color3_claro"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:flow_horizontalAlign="start" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/alarmaTresHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/rounded_edittexthora"
+                android:fontFamily="sans-serif-medium"
+                android:inputType="textEmailAddress"
+                android:minHeight="56dp"
+                android:minWidth="145dp"
+                android:text="@string/alarmaDosHora"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/alarmaTresTemp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_min="100dp" />
+
+            <EditText
+                android:id="@+id/alarmaTresTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+
+                android:background="@drawable/rounded_edittexttemp"
+                android:fontFamily="sans-serif-medium"
+                android:inputType="textEmailAddress"
+                android:minHeight="56dp"
+                android:text="@string/alarmaTrestemp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:minWidth="100dp"
+                app:layout_constraintStart_toEndOf="@+id/alarmaTresHora"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/my_switchTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:useMaterialThemeColors="true" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Color5_claro"
+        android:minHeight="50dp"
+        android:text="@string/iniciarSesion"
+        android:textColor="@color/Color1_oscuro"
+        android:textSize="14sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
