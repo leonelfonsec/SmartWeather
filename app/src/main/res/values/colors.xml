@@ -19,4 +19,6 @@
     <color name="Color5_claro">#F6E4D0</color>
     <color name="sucess">#008000</color>
     <color name="error">#FF4D4D</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
 </resources>

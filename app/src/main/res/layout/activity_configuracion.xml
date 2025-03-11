@@ -1,11 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Color3_oscuro"
-    tools:context=".configuracion">
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cajitas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/bordehoradias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Hora -->
+        <TextView
+            android:id="@+id/tvHora"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/tarjetashora"
+            android:gravity="center"
+            android:text="05"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tvSeparador"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSeparador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text=":"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tvMinuto"
+            app:layout_constraintEnd_toStartOf="@id/tvMinuto"
+            app:layout_constraintStart_toEndOf="@id/tvHora"
+            app:layout_constraintTop_toTopOf="@id/tvMinuto" />
+
+        <TextView
+            android:id="@+id/tvMinuto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/tarjetashora"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/btnAM"
+            app:layout_constraintStart_toEndOf="@id/tvSeparador"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="Hora"
+            android:textColor="@color/Color3_claro"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/tvHora"
+            app:layout_constraintTop_toBottomOf="@+id/tvHora" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="Minuto"
+            android:textColor="@color/Color3_claro"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/tvMinuto"
+            app:layout_constraintTop_toBottomOf="@id/tvMinuto" />
+
+
+        <TextView
+            android:id="@+id/btnAM"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bordeam"
+            android:gravity="center"
+            android:minWidth="52dp"
+            android:text="AM"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnPM"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvMinuto"
+            app:layout_constraintTop_toTopOf="@id/tvMinuto" />
+
+        <TextView
+            android:id="@+id/btnPM"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bordepm"
+            android:gravity="center"
+            android:minWidth="52dp"
+            android:text="PM"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tvMinuto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvMinuto"
+            app:layout_constraintTop_toBottomOf="@+id/btnAM" />
+
+
+        <!-- Separador -->
+
+        <!-- Minuto -->
+
+        <!-- AM/PM -->
+
+        <!-- Etiquetas -->
+
+        <!-- Días de la semana -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
