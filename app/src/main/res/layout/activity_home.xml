@@ -109,7 +109,9 @@
                 android:checked="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:useMaterialThemeColors="true" />
+                app:thumbIcon="@drawable/check"
+                app:trackDecorationTint="@color/Color4"
+                app:trackTint="@color/Color4" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
@@ -172,6 +174,11 @@
                 android:checked="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:thumbIcon="@drawable/close"
+                app:thumbIconTint="@color/Color3_oscuro"
+                app:thumbTint="@color/Color3"
+                app:trackDecorationTint="@color/Color3"
+                app:trackTint="@color/Color4"
                 app:useMaterialThemeColors="true" />
 
 
@@ -239,6 +246,11 @@
                 android:checked="false"
                 android:clickable="false"
                 android:focusable="false"
+                app:thumbIcon="@drawable/close"
+                app:thumbIconTint="@color/Color3_oscuro"
+                app:thumbTint="@color/Color3"
+                app:trackDecorationTint="@color/Color3"
+                app:trackTint="@color/Color4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:useMaterialThemeColors="true" />
