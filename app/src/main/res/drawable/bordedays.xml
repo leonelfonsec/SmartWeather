@@ -7,13 +7,13 @@
 
     <!-- Bordes redondeados -->
     <corners
-        android:topLeftRadius="0dp"
-        android:topRightRadius="0dp"
-        android:bottomLeftRadius="10dp"
-        android:bottomRightRadius="10dp" />
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp" />
 
     <!-- Borde opcional -->
-    <stroke android:width="2.5dp" android:color="@color/Color2" />
+    <stroke android:width="2.3dp" android:color="@color/Color2" />
 
     <!-- Padding interno opcional -->
     <padding

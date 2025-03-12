@@ -13,7 +13,7 @@
         android:bottomRightRadius="15dp" />
 
     <!-- Borde opcional -->
-    <stroke android:width="2dp" android:color="@color/colo2" />
+    <stroke android:width="2dp" android:color="@color/Color2" />
 
     <!-- Padding interno opcional -->
     <padding

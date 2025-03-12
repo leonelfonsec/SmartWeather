@@ -8,18 +8,70 @@
     android:background="@color/Color3_oscuro"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/crear_alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="Crear alarma"
+        android:textAlignment="center"
+        android:textColor="@color/Color5_claro"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/nombrealarma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombrealarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="15dp"
+        android:text="Nombre de la alarma"
+        android:textColor="@color/Color3_claro"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/nombrealarmaentrada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/crear_alarma" />
+
+    <EditText
+        android:id="@+id/nombrealarmaentrada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/borde_nombre_alarma"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="textEmailAddress"
+        android:minWidth="145dp"
+        android:minHeight="56dp"
+        android:text="Alarma uno"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:paddingStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/cajitas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombrealarma"
+        app:layout_constraintWidth_min="100dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cajitas"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/bordehoradias"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/nombrealarmaentrada">
 
         <!-- Hora -->
         <TextView
@@ -93,6 +145,7 @@
         <TextView
             android:id="@+id/btnAM"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/bordeam"
             android:gravity="center"
             android:minWidth="52dp"
@@ -108,6 +161,7 @@
         <TextView
             android:id="@+id/btnPM"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/bordepm"
             android:gravity="center"
             android:minWidth="52dp"
@@ -120,18 +174,36 @@
             app:layout_constraintStart_toEndOf="@id/tvMinuto"
             app:layout_constraintTop_toBottomOf="@+id/btnAM" />
 
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bordedays"
+            android:gravity="center"
+            android:text="  S      M      T      W      T      F      S  "
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvHora"
+            app:layout_constraintTop_toBottomOf="@id/textView" />
 
-        <!-- Separador -->
+        <TextView
+            android:id="@+id/dias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Días"
+            android:textColor="@color/Color3_claro"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/days"
+            app:layout_constraintStart_toStartOf="@id/days"
+            app:layout_constraintTop_toBottomOf="@id/days" />
 
-        <!-- Minuto -->
-
-        <!-- AM/PM -->
-
-        <!-- Etiquetas -->
-
-        <!-- Días de la semana -->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

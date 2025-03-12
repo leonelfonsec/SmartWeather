@@ -5,15 +5,16 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_iniciar_sesion)
+        setContentView(R.layout.activity_home)
 
-        val btnIniciarSesion = findViewById<Button>(R.id.button2)
-        btnIniciarSesion.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
+        val btnCrearAlarma = findViewById<Button>(R.id.boton20)
+        btnCrearAlarma.setOnClickListener {
+            val intent = Intent(this, ConfiguracionActivity::class.java)
             startActivity(intent)
         }
     }
 }
+

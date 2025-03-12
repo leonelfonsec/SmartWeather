@@ -1,0 +1,22 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado activado -->
+    <item android:state_checked="true">
+        <layer-list>
+            <item
+                android:width="16dp"
+                android:height="16dp"
+                android:gravity="center"
+                />
+        </layer-list>
+    </item>
+    <!-- Estado desactivado -->
+    <item android:state_checked="false">
+        <layer-list>
+            <item
+                android:width="16dp"
+                android:height="16dp"
+                android:gravity="center" />
+        </layer-list>
+    </item>
+</selector>
+

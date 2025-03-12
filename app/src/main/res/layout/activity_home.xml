@@ -9,7 +9,7 @@
     tools:context=".home">
 
     <TextView
-        android:id="@+id/bienvenido"
+        android:id="@+id/crear_alarma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -36,7 +36,7 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bienvenido" />
+        app:layout_constraintTop_toBottomOf="@+id/crear_alarma" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -106,6 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="40dp"
+                android:checked="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:useMaterialThemeColors="true" />
@@ -168,6 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="40dp"
+                android:checked="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:useMaterialThemeColors="true" />
@@ -228,15 +230,18 @@
                 app:layout_constraintStart_toEndOf="@+id/alarmaTresHora"
                 app:layout_constraintTop_toTopOf="parent" />
 
+
             <com.google.android.material.materialswitch.MaterialSwitch
                 android:id="@+id/my_switchTres"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="40dp"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:useMaterialThemeColors="true" />
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -245,12 +250,12 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/boton20"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/Color5_claro"
         android:minHeight="50dp"
-        android:text="@string/iniciarSesion"
+        android:text="Crear alarma"
         android:textColor="@color/Color1_oscuro"
         android:textSize="14sp"
         android:layout_marginStart="40dp"
