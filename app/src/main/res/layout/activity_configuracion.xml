@@ -205,5 +205,94 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <com.google.android.material.slider.Slider
+        android:id="@+id/material_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:value="5"
+        android:valueFrom="0"
+        android:valueTo="20"
+        app:labelBehavior="visible"
+        app:labelStyle="@style/CustomSliderLabel"
+        app:layout_constraintBottom_toTopOf="@id/temperatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cajitas"
+        app:thumbColor="@color/Color2"
+        app:trackColor="@color/Color4" />
+
+    <TextView
+        android:id="@+id/temperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="15dp"
+        android:text="Temperatura"
+        android:textColor="@color/Color3_claro"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/temperaturaentrada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/material_slider" />
+
+    <EditText
+        android:id="@+id/temperaturaentrada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/borde_nombre_alarma"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="textEmailAddress"
+        android:minWidth="145dp"
+        android:minHeight="56dp"
+        android:paddingStart="20dp"
+        android:text="≥ 5                                      °C"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temperatura"
+        app:layout_constraintWidth_min="100dp" />
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/Color3"
+        android:minHeight="50dp"
+        android:text="Cancelar"
+        android:textColor="@color/Color5_claro"
+        android:textSize="14sp"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guardar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/Color5_claro"
+        android:minHeight="50dp"
+        android:text="Guardar"
+        android:textColor="@color/Color1_oscuro"
+        android:textSize="14sp"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cancelar" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
